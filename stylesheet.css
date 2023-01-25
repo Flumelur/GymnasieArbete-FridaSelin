@@ -708,4 +708,54 @@ ul {
     padding: 13% 8% 0 6%;
 }
 
+@media screen and (max-width: 900px) {
+    
+.errormsg {
+    padding: 0 13% 0 13%; /*...*/
+}
+    
+.errormsg h1 {
+    float: left;
+    width: 100%; /*...*/
+    margin: 0;
+    padding: 25% 0 0 0%; /*...*/
+    color: #ba6158;
+    font-family: "Karla", sans-serif;
+    font-size: 7em; 
+    font-weight: 600;
+}
+    
+.errormsg h2 {
+    float: left;
+    width: 100%; /*...*/
+    margin: -10px 0 3vh 0; /*...*/
+    padding: 0 0 0 0%; /*...*/
+    color: #424d76;
+    font-size: 2em;
+    font-weight: 400;
+}
+    
+.errormsg p {
+    float: left;
+    width: 100%; /*...*/
+    margin: 0;
+    padding: 0 0 0 0%; /*...*/
+    color: #424d76;
+    font-size: 1.2em; 
+}
+    
+.errormsg p a {text-decoration: underline;}
+
+.errormsg p a:link {color: #23367a;}  
+.errormsg p a:visited {color: #223578;}   
+.errormsg p a:hover {color: #8295dd;}   
+.errormsg p a:active {color: #424d76;}
+
+   
+.errormsg img {
+    width: 80%; /*...*/
+    padding: 13% 12% 0 8%; /*...*/
+}
+
+}
 
