@@ -239,6 +239,7 @@ h2 { /* 'How to get started' Header */
 .block1 img  { /* Bakgrund till wave - styr även iconerna */
      /* ELEFANT se om den kan tas bort */
     bottom: 0;
+    margin: 0 0 -10px 0;
     /* margin: 0;  ELEFANT ta bort?
     padding: 0px 0 0 0; */
     background-color: #4a4474; /* ELEFANT se om den kan tas bort */
