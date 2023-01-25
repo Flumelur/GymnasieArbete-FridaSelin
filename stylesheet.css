@@ -221,7 +221,7 @@ h2 { /* 'How to get started' Header */
 
 .box { /* box för alla iconer och text */
     float: left;
-    padding-bottom: 150px; /* distans till blockets slut bild wave. Kunde inte lägga i .box img eftersom de då påverkade iconerna också */
+    padding-bottom: 0px; /* distans till blockets slut bild wave. Kunde inte lägga i .box img eftersom de då påverkade iconerna också */
     color: #F3E3E1; /* för texten - samma som background color */
     font-size: 20px;
 }
@@ -237,7 +237,8 @@ h2 { /* 'How to get started' Header */
 }
 
 .block1 img  { /* Bakgrund till wave - styr även iconerna */
-    position: relative; /* ELEFANT se om den kan tas bort */
+     /* ELEFANT se om den kan tas bort */
+    bottom: 0;
     /* margin: 0;  ELEFANT ta bort?
     padding: 0px 0 0 0; */
     background-color: #4a4474; /* ELEFANT se om den kan tas bort */
@@ -367,8 +368,295 @@ ul {
 .footer-grid ul li a:hover {color: #e9b3bd;}
 .footer-grid ul li a:active {color: #a49396;}
 
+/*-----------------------------------Smartphone----------------------------------------*/
 
+@media screen and (max-width: 900px) {
+    body {
+     
+    }
 
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+      
+    nav img {
+        width: 80px; /* ... */
+        padding: 12px 0px 0px 14px; /* ... */
+    }
+    
+    .navText {
+        padding: 20px 10px 0 10px; /* ... */
+        font-size: 0.9em;/* ... */
+        text-shadow:
+        -1px 0px 0px #F3E3E1,/* ... */
+        1px 0px 0px #F3E3E1,/* ... */
+        0px -1px 0px #F3E3E1,/* ... */
+        0px 1px 0px #F3E3E1;    /* ... */
+    }
+
+    /* ------------------------------Smartphone Parallax-------------------------------------- */
+    
+    .wrapper {
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        perspective: 10px; /* bestämmer vilket perspektiv transformation påverkas av. Numret kan ändras med kommer påverka 'transform: tranlateZ scale' */
+    }
+      
+    header {
+        z-index: -1; /* djup */
+        position: relative;
+        display: flex;
+        justify-content: center; /* gör så att allt är i mitten och hamnar rätt när skala ändras*/
+        align-items: center;
+        height: 100%;
+        transform-style: preserve-3d;
+    }
+      
+    .background {
+        margin-left: 400px;
+        transform: translateZ(-10px) scale(2); /* lägger objektet 'längre bort' men använder skala så att bilden täcker skärmen */
+    }
+      
+    .middle {
+        transform: translateZ(-5px) scale(1.5);
+    }
+      
+    .background,
+    .middle,
+    .foreground {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }      
+      
+    #headerText {
+        z-index: 10; /* puts the search box and text on top of the parallax */
+        width: 400px;
+        margin: -110% 0 0 -0%;  /*---*/
+        padding: 20px;
+        overflow: hidden;
+    }
+       
+    header #headerText h1 { /* header text welcome page */
+        margin: 0 0 6px 0; /*---*/
+        color: #424d76;
+        font-family: "Knewave", sans-serif;
+        font-size: 2em;/*---*/
+        font-weight: 100;
+    }
+      
+    header #headerText p { /* small welcome text/paragraph css */
+        margin: 0 0 20px 0; /*---*/
+        color: #4d4d4d;
+        font-size: 0.9em;/*---*/
+    }
+      
+    header #headerText #searchbox {
+        width: 70%; /*---*/
+        padding: 10px 8px 10px 8px; /*---*/
+        border-radius: 8px;
+        background-color: #bab7c9;
+    }
+      
+    header #headerText #searchbox img {
+        float: right;
+        width: 15px; /*---*/
+        padding: 2px 8px 0 0; /*---*/
+    }
+      
+    header #headerText #searchbox input[type=text] {
+        width: 85%;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+        color: #383737;
+        font-family: "Karla", sans-serif;
+        font-size: 0.9em ; /*---*/
+        font-weight: normal;   
+    }
+      
+    header #headerText #searchbox ::placeholder { 
+        color: #383737;
+        font-size: 0.9em; /*---*/
+        font-weight: normal;
+    }
+
+    
+/* -----------------------------Smartphone Block 1----------------------------------- */
+
+section { /*section för alla iconer och text till 'How to get started' samt vågen på slutet*/
+    width: 100%;
+    height: 565px; /*...*/
+    box-shadow: 0px -2px #4a4474;
+    text-align: center;
+}
+
+h2 { /* 'How to get started' Header */
+    margin: 0;
+    padding: 5% 0 0 0 ;
+    color: #f6c89c;    
+    font-family: "Knewave", sans-serif;
+    font-size: 2em; /*...*/
+    font-weight: 100;
+}
+
+.icons { /* iconernas padding. Inefattar både iconer, text och squiggle lines för jämna margins */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 20%));
+    grid-auto-rows: auto;
+    height: auto;
+    padding: 5% 25% 0% 25%; /*...*/
+    align-content: center;
+}
+
+.dividers img { /* squiggle lines */
+    width: 0%; /*...*/
+    opacity: 0.0;
+  /*  align: center; /* ELEFANT ta bort? */ 
+}
+
+.box { /* box för alla iconer och text */
+    float: left;
+    padding-bottom: 10px;/*...*/ /* distans till blockets slut bild wave. Kunde inte lägga i .box img eftersom de då påverkade iconerna också */
+    color: #F3E3E1; /* för texten - samma som background color */
+    font-size: 1.2em; /*...*/
+}
+
+.box img {
+    width: 30%; /*...*/
+  /*  margin-top: -500px; ELEFANT ta bort? */
+   /* align: center; /* ELEFANT ta bort? */
+}
+
+.block1 { /* Bakgrund till wave */
+    background-color: #4a4474;
+}
+
+.block1 img  { /* Bakgrund till wave - styr även iconerna */
+    position: relative; /* ELEFANT se om den kan tas bort */
+    /* margin: 0;  ELEFANT ta bort?
+    padding: 0px 0 0 0; */
+    background-color: #4a4474; /* ELEFANT se om den kan tas bort */
+}
+
+/* ---------------------------------Smartphone Block 2--------------------------------------- */
+
+.block2 {
+    width: 80%; /*...*/
+    height: 450px; /*...*/
+    padding-right: 10%; /*...*/
+    padding-left: 10%; /*...*/
+    background-color: #F3E3E1;
+}
+    
+.block2 h1 { /* header block 2 */
+    margin: 0;
+    padding: 60px 0 40px 0; /*...*/
+    color: #424d76;
+    font-family: "Knewave", sans-serif;
+    font-size: 2em; /*...*/
+    font-weight: 100;
+}
+    
+.block2 h4 { /* kategori knappar/buttons */
+    float: left;
+    margin: 20px 5px 0 5px; /*...*/
+    padding: 5px 15px 5px 15px; /*...*/
+    border-radius: 20px;
+    background-color: #424d76;
+    color: #f9f0ef;
+    font-size: 0.9em; /*...*/
+    font-weight: 100;
+}
+    
+.block2 h4 a:link {color: #f9f0ef; text-decoration: none;}  /* för att texten inte ska byta färg att de är länkar */
+.block2 h4 a:visited {color: #f9f0ef;} 
+.block2 h4 a:hover {color: #f9f0ef;}
+.block2 h4 a:active {color: #f9f0ef;}
+    
+.block2 h4:hover { 
+    background-color: #f9f0ef;
+    box-shadow: inset 0 0 2px #424d76;
+    color: #424d76;
+}
+    
+.block2 h4:hover a:link {color: #424d76; text-decoration: none;}  /* för att texten ska byta färg på hover trotts att de är länkar */
+.block2 h4:hover a:visited {color: #424d76;} 
+.block2 h4:hover a:hover {color: #424d76;}
+.block2 h4:hover a:active {color: #424d76;}
+    
+/* ----------------------------------Smartphone Footer--------------------------------------- */
+
+footer img { /* Bakgrund till wave i footer */
+    position: relative;
+    width: 100%;
+    /* ELEFANT ta bort?   margin: 0;
+    padding: 0px 0 0 0; */
+    box-shadow: 0px 4px #2d2b3f;
+}
+  
+#footer-main {
+    /* ELEFANT ta bort? margin: 0; */
+    background-color: #2d2b3f; 
+}
+  
+#footer-main img {
+    display: block;
+    width: 130px; /*...*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px 0px 100px; /*...*/
+}
+  
+#footer-main .copy p {
+    margin: 0;
+    padding-bottom: 2vh;
+    text-align: center;
+    color: rgba(193, 181, 179, 0.5);
+}
+  
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 20%));
+    grid-auto-rows: auto;
+    /* ELEFANT ta bort? grid-gap: 10px;*/
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10% 4vh 10%; /*...*/
+}
+
+.footer-grid h4 { 
+    color: #f4e4e2;
+    font-size: 1em; /*...*/
+} 
+  
+.footer-grid  p {         
+    color: #f4e4e2;
+    font-size: 0.8em; /*...*/
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+}
+ 
+.footer-grid ul li a { /*  Footer links CSS  */
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #f4e4e2;
+}
+  
+.footer-grid ul li a:link {color: #f4e4e2; text-decoration: none;}
+.footer-grid ul li a:visited {color: #a49396;}
+.footer-grid ul li a:hover {color: #e9b3bd;}
+.footer-grid ul li a:active {color: #a49396;}
+
+}
 
 /*--------------------------------- Error page CSS ---------------------------------*/
 
@@ -382,6 +670,7 @@ ul {
     margin: 0;
     padding: 18% 0 0 10%;
     color: #ba6158;
+    font-family: "Karla", sans-serif;
     font-size: 7em;
     font-weight: 600;
 }
