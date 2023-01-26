@@ -428,7 +428,7 @@ ul {
       
     .background {
         transform: translateZ(-10px) scale(2); /* lägger objektet 'längre bort' men använder skala så att bilden täcker skärmen */
-        background-image: url("Parallax/backgroundSP3.svg");
+        background-image: url("Parallax/backgroundSP4.svg");
         background-repeat: no-repeat;
         background-size: cover;
     }
