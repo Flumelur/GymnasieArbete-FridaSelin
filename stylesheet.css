@@ -79,10 +79,21 @@ header {
   
 .background {
     transform: translateZ(-10px) scale(2); /* lägger objektet 'längre bort' men använder skala så att bilden täcker skärmen */
+    background-image: url("Parallax/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
   
 .middle {
     transform: translateZ(-5px) scale(1.5);
+    background-image: url("Parallax/middleground2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foreground {
+    background: url("Parallax/Foreground2.svg") no-repeat;
+    background-size: cover;
 }
   
 .background,
@@ -313,6 +324,7 @@ footer img { /* Bakgrund till wave i footer */
 #footer-main img {
     display: block;
     width: 180px;
+    margin-top: 120px;
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
@@ -415,12 +427,22 @@ ul {
     }
       
     .background {
-        margin-left: 400px;
         transform: translateZ(-10px) scale(2); /* lägger objektet 'längre bort' men använder skala så att bilden täcker skärmen */
+        background-image: url("Parallax/backgroundSP3.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
       
     .middle {
         transform: translateZ(-5px) scale(1.5);
+        background-image: url("Parallax/middlegroundSP3.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .foreground {
+        background: url("Parallax/foregorundSP3.svg") no-repeat;
+        background-size: cover;
     }
       
     .background,
@@ -607,6 +629,7 @@ footer img { /* Bakgrund till wave i footer */
 #footer-main img {
     display: block;
     width: 130px; /*...*/
+    margin-top: 20px; /*ELEFANT dont work*/
     margin-left: auto;
     margin-right: auto;
     padding: 20px 20px 0px 100px; /*...*/
