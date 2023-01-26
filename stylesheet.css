@@ -427,21 +427,21 @@ ul {
     }
       
     .background {
-        transform: translateZ(-10px) scale(2); /* lägger objektet 'längre bort' men använder skala så att bilden täcker skärmen */
-        background-image: url("Parallax/backgroundSP4.svg");
+        transform: translateZ(-10px) scale(1); /*...*/
+        background-image: url("Parallax/backgroundSP4.svg"); /*...*/
         background-repeat: no-repeat;
         background-size: cover;
     }
       
     .middle {
         transform: translateZ(-5px) scale(1.5);
-        background-image: url("Parallax/middlegroundSP3.svg");
+        background-image: url("Parallax/middlegroundSP3.svg"); /*...*/
         background-repeat: no-repeat;
         background-size: cover;
     }
     
     .foreground {
-        background: url("Parallax/foregorundSP3.svg") no-repeat;
+        background: url("Parallax/foregorundSP3.svg") no-repeat; /*...*/
         background-size: cover;
     }
       
