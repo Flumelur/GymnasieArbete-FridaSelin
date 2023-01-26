@@ -427,7 +427,7 @@ ul {
     }
       
     .background {
-        transform: translateZ(-10px) scale(1); /*...*/
+        transform: translateZ(-2.5px) scale(1.3); /*...*/
         background-image: url("Parallax/backgroundSP4.svg"); /*...*/
         background-repeat: no-repeat;
         background-size: cover;
