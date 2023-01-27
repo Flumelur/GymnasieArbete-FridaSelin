@@ -293,8 +293,6 @@ h2 { /* 'How to get started' Header */
 .bubbles {
     padding-right: 15%;
     padding-left: 15%;
-    justify-content: center; /* gör så att allt är i mitten och hamnar rätt när skala ändras*/
-    align-items: center;
     padding-bottom: 40vh;
 }
     
@@ -388,6 +386,73 @@ ul {
 .footer-grid ul li a:visited {color: #a49396;}
 .footer-grid ul li a:hover {color: #e9b3bd;}
 .footer-grid ul li a:active {color: #a49396;}
+
+
+
+
+@media screen and (max-width: 1920px) {
+    .bubbles {
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-bottom: 40vh;
+    }
+
+}
+
+/*-----------------------------------Tabletpad----------------------------------------*/
+
+
+@media screen and (max-width: 1280px) {
+
+/* -----------------------------Tablet Block 1----------------------------------- */
+
+section { /*section för alla iconer och text till 'How to get started' samt vågen på slutet*/
+    height: 320px; 
+}
+
+h2 { /* 'How to get started' Header */
+    padding: 0% 0 2vh 0 ; 
+    font-size: 2em; 
+}
+
+.icons { /* iconernas padding. Inefattar både iconer, text och squiggle lines för jämna margins */
+    grid-template-columns: repeat(auto-fit, minmax(0px, 20%));
+    padding: 5% 25% 0% 25%; 
+}
+
+.dividers img { /* squiggle lines */
+    width: 0%;
+}
+
+.box { /* box för alla iconer och text */
+    padding-bottom: 10px; /* distans till blockets slut bild wave. Kunde inte lägga i .box img eftersom de då påverkade iconerna också */
+    font-size: 1.2em; 
+}
+
+.box img {
+    width: 60%; 
+}
+
+.block1 img  { 
+    margin-bottom: 0px; 
+}
+
+.block2 {
+    width: 60%;
+    padding-right: 20%;
+    padding-left: 20%;
+    background-color: #F3E3E1;
+}
+
+.bubbles {
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
+}
+
+
+
 
 /*-----------------------------------Smartphone----------------------------------------*/
 
