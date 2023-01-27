@@ -79,20 +79,20 @@ header {
   
 .background {
     transform: translateZ(-10px) scale(2); /* lägger objektet 'längre bort' men använder skala så att bilden täcker skärmen */
-    background-image: url("Parallax/background.svg");
+    background-image: url("Parallax/background3.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
   
 .middle {
     transform: translateZ(-5px) scale(1.5);
-    background-image: url("Parallax/middleground2.svg");
+    background-image: url("Parallax/middleground3.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .foreground {
-    background: url("Parallax/Foreground2.svg") no-repeat;
+    background: url("Parallax/Foreground3.svg") no-repeat;
     background-size: cover;
 }
   
@@ -289,6 +289,14 @@ h2 { /* 'How to get started' Header */
     font-size: 1em;
     font-weight: 100;
 }
+
+.bubbles {
+    padding-right: 15%;
+    padding-left: 15%;
+    justify-content: center; /* gör så att allt är i mitten och hamnar rätt när skala ändras*/
+    align-items: center;
+    padding-bottom: 40vh;
+}
     
 .block2 h4 a:link {color: #f9f0ef; text-decoration: none;}  /* för att texten inte ska byta färg att de är länkar */
 .block2 h4 a:visited {color: #f9f0ef;} 
@@ -383,7 +391,7 @@ ul {
 
 /*-----------------------------------Smartphone----------------------------------------*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
     body {
      
     }
@@ -511,14 +519,14 @@ ul {
 
 section { /*section för alla iconer och text till 'How to get started' samt vågen på slutet*/
     width: 100%;
-    height: 565px; /*...*/
+    height: 575px; /*...*/
     box-shadow: 0px -2px #4a4474;
     text-align: center;
 }
 
 h2 { /* 'How to get started' Header */
     margin: 0;
-    padding: 5% 0 0 0 ;
+    padding: 0% 0 2vh 0 ; /*...*/
     color: #f6c89c;    
     font-family: "Knewave", sans-serif;
     font-size: 2em; /*...*/
@@ -559,7 +567,7 @@ h2 { /* 'How to get started' Header */
 
 .block1 img  { /* Bakgrund till wave - styr även iconerna */
     position: relative; /* ELEFANT se om den kan tas bort */
-    margin-bottom: -4px;
+    margin-bottom: 0px; /*...*/
     /* margin: 0;  ELEFANT ta bort?
     padding: 0px 0 0 0; */
     background-color: #4a4474; /* ELEFANT se om den kan tas bort */
@@ -569,7 +577,7 @@ h2 { /* 'How to get started' Header */
 
 .block2 {
     width: 80%; /*...*/
-    height: 450px; /*...*/
+    height: 420px; /*...*/
     padding-right: 10%; /*...*/
     padding-left: 10%; /*...*/
     background-color: #F3E3E1;
@@ -583,6 +591,15 @@ h2 { /* 'How to get started' Header */
     font-size: 2em; /*...*/
     font-weight: 100;
 }
+
+.bubbles {
+    padding-right: 0%; /*...*/
+    padding-left: 0%; /*...*/
+    justify-content: center; /* gör så att allt är i mitten och hamnar rätt när skala ändras*/
+    align-items: center;
+    padding-bottom: 0vh; /*...*/
+}
+    
     
 .block2 h4 { /* kategori knappar/buttons */
     float: left;
@@ -591,7 +608,7 @@ h2 { /* 'How to get started' Header */
     border-radius: 20px;
     background-color: #424d76;
     color: #f9f0ef;
-    font-size: 0.9em; /*...*/
+    font-size: 0.8em; /*...*/
     font-weight: 100;
 }
     
@@ -618,7 +635,7 @@ footer img { /* Bakgrund till wave i footer */
     width: 100%;
     /* ELEFANT ta bort?   margin: 0;
     padding: 0px 0 0 0; */
-    box-shadow: 0px 4px #2d2b3f;
+    box-shadow: 0px 8px #2d2b3f;  /*...*/
 }
   
 #footer-main {
