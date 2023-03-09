@@ -636,6 +636,7 @@ h2 { /* 'How to get started' Header */
     /* margin: 0;  ELEFANT ta bort?
     padding: 0px 0 0 0; */
     background-color: #4a4474; /* ELEFANT se om den kan tas bort */
+    margin-top: 5px;
 }
 
 /* ---------------------------------Smartphone Block 2--------------------------------------- */
