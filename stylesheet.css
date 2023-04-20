@@ -1125,3 +1125,28 @@ background-color: #343d9a;
       @media (min-width: 2000px) {
         .feed { grid-template-columns: repeat(3, 1fr); }
       }
+
+
+
+
+
+      CSS: 
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-number {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.page-number:hover {
+  background-color: #eee;
+}

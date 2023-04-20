@@ -12,33 +12,6 @@
  
 </head>
 <body>
-  <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
-
-  <?php
-  include(" tags.php ");
-  ?>
-
-          <div class="wrapper2">
-              <div class="box">
-                  <div class="content">
-                      <div class="tooltip">
-                          <img src="Logo/DiscordLogo.png" alt="" style="width: 100%;">
-                          <span class="tooltiptext"><?php echo $card["name"]; ?></span>
-                      </div>
-                      <h1><?php echo $card["name"]; ?></h1>
-                      <p><?php echo $card["description"]; ?></p>
-                      <ul>
-                          <?php foreach ($card["tags"] as $tag) { ?>
-                              <li><?php echo $tag; ?></li>
-                          <?php } ?>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      <?php }
-  }
-  ?>
-
 
     <nav id="nav">
         <a href="index.html"><img src="Logo/logoVers1.4.2.svg" alt="find-a-group's logo showing two speech bubbles: one with a waving hand in it"></a>
@@ -61,9 +34,13 @@
       <div class="dropdown">
         <button class="dropbtn">Specifikations</button>
         <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">Fantasy</a>
+          <a href="#">Romance</a>
+          <a href="#">Sci-fi</a>
+          <a href="#">Crime</a>
+          <a href="#">Horror</a>
+          <a href="#">Young Adult</a>
+          <a href="#">Slice of Life</a>
         </div>
       </div>
       <div class="dropdown">
@@ -76,13 +53,23 @@
       </div>
     </div>
 
+    <!--
+    <div class="pagination">
+      <a href="#" class="page-number">1</a>
+      <a href="#" class="page-number">2</a>
+      <a href="#" class="page-number">3</a>
+      <a href="#" class="page-number">4</a>
+      <a href="#" class="page-number">5</a>
+    </div>
+  -->
+
    <!-- <div class="pagination">
       <li class="page-item previous-page"></li>
     </div> -->
-
+<!--
     <div id="pagination-links"></div>
-
-<!-- Your HTML code for the card -->
+-->
+<!-- Your HTML code for the card ->
 <div class="wrapper2">
   <div class="box">
     <div class="content">
@@ -90,17 +77,17 @@
         <img src="Logo/DiscordLogo.png" alt="" style="width: 100%;">
         <span class="tooltiptext">Discord</span>
       </div>
-      <h1><?php echo $group_name; ?></h1> <!-- Displaying dynamic content from PHP code -->
-      <p><?php echo $group_info; ?></p> <!-- Displaying dynamic content from PHP code -->
+      <h1><?php echo $group_name; ?></h1> <!-- Displaying dynamic content from PHP code ->
+      <p><?php echo $group_info; ?></p> <!-- Displaying dynamic content from PHP code ->
       <ul>
-        <?php foreach ($group_tags as $tag) { ?> <!-- Displaying dynamic content from PHP code -->
+        <?php foreach ($group_tags as $tag) { ?> <!-- Displaying dynamic content from PHP code ->
         <li><?php echo $tag; ?></li>
         <?php } ?>
       </ul>
     </div>
   </div>
 </div>
-<!-- Your HTML code for the card -->
+<!-- Your HTML code for the card ->
 <div class="wrapper2">
   <div class="box">
     <div class="content">
@@ -108,17 +95,17 @@
         <img src="Logo/DiscordLogo.png" alt="" style="width: 100%;">
         <span class="tooltiptext">Discord</span>
       </div>
-      <h1><?php echo $group_name; ?></h1> <!-- Displaying dynamic content from PHP code -->
-      <p><?php echo $group_info; ?></p> <!-- Displaying dynamic content from PHP code -->
+      <h1><?php echo $group_name; ?></h1> <!-- Displaying dynamic content from PHP code ->
+      <p><?php echo $group_info; ?></p> <!-- Displaying dynamic content from PHP code ->
       <ul>
-        <?php foreach ($group_tags as $tag) { ?> <!-- Displaying dynamic content from PHP code -->
+        <?php foreach ($group_tags as $tag) { ?> <!-- Displaying dynamic content from PHP code ->
         <li><?php echo $tag; ?></li>
         <?php } ?>
       </ul>
     </div>
   </div>
 </div>
-<!-- Your HTML code for the card -->
+<!-- Your HTML code for the card ->
 <div class="wrapper2">
   <div class="box">
     <div class="content">
@@ -126,17 +113,17 @@
         <img src="Logo/DiscordLogo.png" alt="" style="width: 100%;">
         <span class="tooltiptext">Discord</span>
       </div>
-      <h1><?php echo $group_name; ?></h1> <!-- Displaying dynamic content from PHP code -->
-      <p><?php echo $group_info; ?></p> <!-- Displaying dynamic content from PHP code -->
+      <h1><?php echo $group_name; ?></h1> <!-- Displaying dynamic content from PHP code ->
+      <p><?php echo $group_info; ?></p> <!-- Displaying dynamic content from PHP code ->
       <ul>
-        <?php foreach ($group_tags as $tag) { ?> <!-- Displaying dynamic content from PHP code -->
+        <?php foreach ($group_tags as $tag) { ?> <!-- Displaying dynamic content from PHP code ->
         <li><?php echo $tag; ?></li>
         <?php } ?>
       </ul>
     </div>
   </div>
 </div>
-<!-- Your HTML code for the card -->
+<!-- Your HTML code for the card ->
 <div class="wrapper2">
   <div class="box">
     <div class="content">
@@ -144,17 +131,17 @@
         <img src="Logo/DiscordLogo.png" alt="" style="width: 100%;">
         <span class="tooltiptext">Discord</span>
       </div>
-      <h1><?php echo $group_name; ?></h1> <!-- Displaying dynamic content from PHP code -->
-      <p><?php echo $group_info; ?></p> <!-- Displaying dynamic content from PHP code -->
+      <h1><?php echo $group_name; ?></h1> <!-- Displaying dynamic content from PHP code ->
+      <p><?php echo $group_info; ?></p> <!-- Displaying dynamic content from PHP code ->
       <ul>
-        <?php foreach ($group_tags as $tag) { ?> <!-- Displaying dynamic content from PHP code -->
+        <?php foreach ($group_tags as $tag) { ?> <!-- Displaying dynamic content from PHP code ->
         <li><?php echo $tag; ?></li>
         <?php } ?>
       </ul>
     </div>
   </div>
 </div>
-
+-->
 
 
     <div class="wrapper2">
@@ -167,8 +154,8 @@
             <h1>Group Name</h1>
                 <p>Infomation Lorem ipsum, description stuff stuff lorem</p>
                 <ul>
-                    <li>Tags</li>
-                    <li>Tags</li>
+                    <li>Romance</li>
+                    <li>Sci-fi</li>
                     <li>Tags</li>
                     <li>Tags</li>
                     <li>Tags</li>
@@ -189,26 +176,7 @@
             <h1>Group Name</h1>
                 <p>Infomation Lorem ipsum, description stuff stuff lorem</p>
                 <ul>
-                    <li>Tags</li>
-                    <li>Tags</li>
-                    <li>Tags</li>
-                    <li>Tags</li>
-                    <li>Tags</li>
-                </ul>
-          </div>
-        </div>
-      </div>
-      <div class="wrapper2">
-        <div class="box">
-          <div class="content">
-            <div class="tooltip">
-            <img src="Logo/DiscordLogo.png" alt="" style="width: 100%;">
-                <span class="tooltiptext">Discord</span>
-            </div>
-            <h1>Group Name</h1>
-                <p>Infomation Lorem ipsum, description stuff stuff lorem</p>
-                <ul>
-                    <li>Tags</li>
+                    <li>Fantasy</li>
                     <li>Tags</li>
                     <li>Tags</li>
                     <li>Tags</li>
@@ -227,8 +195,27 @@
             <h1>Group Name</h1>
                 <p>Infomation Lorem ipsum, description stuff stuff lorem</p>
                 <ul>
+                    <li>Sci-fi</li>
+                    <li>Crime</li>
                     <li>Tags</li>
                     <li>Tags</li>
+                    <li>Tags</li>
+                </ul>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper2">
+        <div class="box">
+          <div class="content">
+            <div class="tooltip">
+            <img src="Logo/DiscordLogo.png" alt="" style="width: 100%;">
+                <span class="tooltiptext">Discord</span>
+            </div>
+            <h1>Whut</h1>
+                <p>Infomation Lorem ipsum, description stuff stuff lorem</p>
+                <ul>
+                    <li>Romance<li>
+                    <li>Slice of Life</li>
                     <li>Tags</li>
                     <li>Tags</li>
                     <li>Tags</li>
@@ -246,8 +233,8 @@
             <h1>Group Name</h1>
                 <p>Infomation Lorem ipsum, description stuff stuff lorem</p>
                 <ul>
-                    <li>Tags</li>
-                    <li>Tags</li>
+                    <li>Fantasy</li>
+                    <li>Young Adult</li>
                     <li>Tags</li>
                     <li>Tags</li>
                     <li>Tags</li>
@@ -265,7 +252,7 @@
             <h1>Group Name</h1>
                 <p>Infomation Lorem ipsum, description stuff stuff lorem</p>
                 <ul>
-                    <li>Tags</li>
+                    <li>Slice of Life</li>
                     <li>Tags</li>
                     <li>Tags</li>
                     <li>Tags</li>
@@ -285,8 +272,8 @@
           <h1>Group Name</h1>
               <p>Infomation Lorem ipsum, description stuff stuff lorem</p>
               <ul>
-                  <li>Tags</li>
-                  <li>Tags</li>
+                  <li>Horror</li>
+                  <li>Sci-fi</li>
                   <li>Tags</li>
                   <li>Tags</li>
                   <li>Tags</li>
@@ -307,8 +294,8 @@
           <h1>Group Name</h1>
               <p>Infomation Lorem ipsum, description stuff stuff lorem</p>
               <ul>
-                  <li>Tags</li>
-                  <li>Tags</li>
+                  <li>Romance</li>
+                  <li>Young Adult</li>
                   <li>Tags</li>
                   <li>Tags</li>
                   <li>Tags</li>
