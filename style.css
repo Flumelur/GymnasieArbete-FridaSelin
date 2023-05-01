@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Karla", sans-serif;
+    line-height: 1.5;
+    color: #424d76;
+    
+  }
+  
+  .header {
+    background-color: #F3E3E1;;
+    padding: 5% 0 0 11.2%;
+    width: 100%;
+    
+   
+  }
+
+  .header h1 {
+    background-color: #F3E3E1;
+    font-family: "Knewave", sans-serif;
+    margin: 0;
+font-size: 2.5em;
+font-weight: 800;
+color: #936070;
+
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container h2 {
+    color: #4a4474;
+    font-family: "Karla", sans-serif;
+    font-size: 1.6em;
+    font-weight: 100;
+    margin: 5% 0 2% 0;
+    padding: 0;
+  }
+  
+
+  .form-container {
+    flex-basis: 60%;
+    margin-right: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f0f0f0;
+    transition: all 0.3s;
+    font-family: "Karla", sans-serif;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    background-color: #fff
+  }
+
+  .form-container button {
+    float: right;
+    padding: 12px 12px 12px 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: #424dbe;
+    color: #fff;
+    font-family: "Karla", sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+  }
+
+  .form-container button:hover {
+    background-color: #828be8;
+    color: #fff;
+  }
+
+  .info-container {
+    width: 60%;
+    margin: 0 0 10% 0;
+  }
+
+  footer {
+    margin: 0 0 -10px 0;
+  }
