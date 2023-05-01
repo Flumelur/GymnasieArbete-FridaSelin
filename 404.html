@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+    <link rel="icon" type="image/x-icon" href="Logo/logoIcon.svg">
+    <script>
+		function showRandomMessage() {
+			var messages = [
+				"Oops! Looks like this group isn't ready to be found just yet. Keep searching and you'll find your tribe soon enough",
+				"We're sorry, this group seems to have gone rogue. But don't worry, we'll send out a search party to find it soon!",
+				"Oops, it looks like you've stumbled upon a group that's gone missing. Time to recruit some new members and start fresh!",
+                "Looks like you've taken a wrong turn. Let's get you back on track to finding the perfect interest group!",
+				"Let's go back to the homepage!",
+                "We can't find the group you're looking for, but don't give up just yet. There are plenty of other groups out there waiting for you to discover them!",
+				"Hmm, this isn't the page you're looking for...",
+                "Oops, it seems like the page you're looking for has gone missing. Maybe it's off on an adventure, or maybe it just needs a nap. Either way, we'll keep searching for it!",
+                "Uh oh, it seems you've stumbled upon a secret hideout. Unfortunately, it's not the one you were looking for. Let's get you to the right one!",
+                "This 404 error page is definitely brought to you by our team of human writers, not ChatGPT. Don't worry, we won't let the machines take over just yet",
+                "This page has ghosted us, fam. Maybe it's time to slide into the DMs of the website's support team and let them know",
+                "Oopsies, you've stumbled upon a dead link. Time to hit that back button and try again, fam"
+
+			];
+			var randomNumber = Math.floor(Math.random() * messages.length);
+			document.getElementById("error-message").innerHTML = messages[randomNumber];
+		}
+	</script>
+</head>
+<body onload="showRandomMessage()">
+    <nav id="nav">
+        <a href="index.html"><img src="Logo/logoVers1.4.2.svg" alt="find-a-group's logo showing two speech bubbles: one with a waving hand in it"></a>
+        <div class="dropdown1">
+          <button class="dropbtn1"><a href="feed.html" class="navText">Categories</a></button>
+          <div class="dropdown-content1">
+            <a href="feed.html">Books</a>
+            <a href="#">Movies</a>
+            <a href="#">Gaming</a>
+          </div>
+        </div>
+        <a href="404error.html" class="navText">Help</a>
+        <a href="404error.html" class="navText">About</a>
+    </nav>
+
+    <div class="errormsg">
+        <h1>404</h1>
+        <h2>Page not found</h2>
+        <p id="error-message"></p>
+        <p><br> Press  <a href="index.html" class="here" style="font-weight: 800;";">here</a> to return to start page.</p>
+        <img src="Pictures/questionMark4.svg" alt="man looking up at question mark and scratching his head">
+    </div>
+</body>
+</html>

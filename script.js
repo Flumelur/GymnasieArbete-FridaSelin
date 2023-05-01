@@ -67,7 +67,7 @@ document.getElementById('pagination-links').addEventListener('click', function(e
   }
 });
 */
-
+/*
 // Get all the page number links
 const pageLinks = document.querySelectorAll('.page-number');
 
@@ -84,6 +84,11 @@ pageLinks.forEach(link => {
     console.log(Loading page ${pageNumber});
   });
 });
+*/
+
+
+
+
 
 
 
